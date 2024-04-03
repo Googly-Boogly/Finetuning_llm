@@ -1,0 +1,14 @@
+#####################################################
+# Change to docker-compose.prod.yml and change any variables to your local ones
+# Than run docker-compose up --build in the same directory as this file
+
+version: '3.8'
+
+services:
+
+  finetuner:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+
